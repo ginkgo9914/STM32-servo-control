@@ -12,25 +12,17 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      flex-direction: column;
     }
-    video {
-      max-width: 100%;
-      max-height: 100vh;
-    }
-    .hint {
-      color: #888;
-      font-size: 14px;
-      margin-top: 12px;
-      font-family: sans-serif;
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <video controls preload="metadata">
-    <source src="video.mp4" type="video/mp4">
-    你的浏览器不支持视频播放。
-  </video>
-  <p class="hint">点击播放按钮开始观看</p>
+  <iframe src="//player.bilibili.com/player.html?bvid=BV1nA5u6AEzX&high_quality=1"
+    allowfullscreen>
+  </iframe>
 </body>
 </html>
