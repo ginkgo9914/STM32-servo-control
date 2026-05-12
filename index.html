@@ -12,17 +12,25 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      flex-direction: column;
     }
     video {
       max-width: 100%;
       max-height: 100vh;
     }
+    .hint {
+      color: #888;
+      font-size: 14px;
+      margin-top: 12px;
+      font-family: sans-serif;
+    }
   </style>
 </head>
 <body>
-  <video controls autoplay>
+  <video controls preload="metadata">
     <source src="video.mp4" type="video/mp4">
     你的浏览器不支持视频播放。
   </video>
+  <p class="hint">点击播放按钮开始观看</p>
 </body>
 </html>
