@@ -1,0 +1,16 @@
+# Keil MDK build outputs
+Objects/
+Listings/
+DebugConfig/
+
+# Keil user-specific files
+*.uvoptx
+*.uvguix.*
+
+# IDE logs
+.vscode/*.log
+.vscode/*.lock
+
+# Editor backups
+*~
+*.bak
